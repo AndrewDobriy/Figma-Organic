@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #2d3436;
+
+  --color-gray-light: #f9f8f8;
+
+  --color-green-dark: #274c5b;
+  --color-green-light: #7eb693;
+
+  --color-yellow-light: #efd372;
+
+  --animation-speed: 0.5s;
+  --animation-function: ease;
+  --animation: var(--animation-speed) var(--animation-function); /*Запихнули две переменные в одну переменную для уменьшения кода*/
+}
+
+.btn-primary {
+  position: relative;
+  height: 82px;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.btn-primary::after {
+  content: '';
+  background-image: url('/assets/main/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height: 34px;
+  width: 38px;
+  border-radius: 50%;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
