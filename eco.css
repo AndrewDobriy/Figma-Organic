@@ -1,0 +1,61 @@
+.eco-friendly {
+  position: relative;
+  display: flex;
+}
+
+.eco-img {
+  background-image: url('assets/eco/eco-friendly.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 720px;
+}
+
+.eco-card {
+  width: 720px;
+  height: 623px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+  right: 60px;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px 50px 60px;
+}
+
+.eco-card h3 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Yellowtail', cursive;
+  color: var(--color-green-light);
+}
+.eco-card h2 {
+  font-size: 44px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-green-dark);
+  width: 50%;
+  margin-bottom: 30px;
+}
+.eco-card h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+  color: var(--color-green-dark);
+}
+.eco-card h5 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: var(--color-gray-dark);
+}

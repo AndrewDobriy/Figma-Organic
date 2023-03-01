@@ -1,0 +1,132 @@
+.shop-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 32px;
+}
+
+.shop {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shop h3 {
+  font-size: 36px;
+  font-family: 'Yellowtail', cursive;
+  color: var(--color-green-light);
+  font-weight: 400;
+}
+
+.shop h2 {
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-green-dark);
+  font-weight: 700;
+}
+
+.shop-card {
+  width: 450px;
+  height: 590px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray-light);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.shop-card:hover {
+  transform: scale(1.05);
+  transition: var(--animation);
+  box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
+  -webkit-box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
+  -moz-box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
+}
+
+.shop-card-line {
+  background: #d4d4d4;
+  height: 1px;
+}
+
+.shop-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  height: 37px;
+  border-radius: 8px;
+  background-color: var(--color-green-dark);
+  color: white;
+
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shop-card-name {
+  margin: 20px 0 10px 0;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 35px;
+  letter-spacing: 0.36px;
+  color: var(--color-green-dark);
+}
+
+.shop-card-price-container {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.shop-card-price-container::after {
+  content: '';
+  position: absolute;
+  background-image: url('assets/shop/stars.png');
+
+  width: 85px;
+  height: 15px;
+  right: 0px;
+}
+
+.shop-card-price {
+  font-weight: 400;
+  color: #b8b8b8;
+  text-decoration-line: line-through;
+  font-size: 17px;
+}
+
+.shop-card-discount {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-green-dark);
+  margin-left: 10px;
+}
+
+@media (max-width: 1280px) {
+  .shop-card {
+    width: 305px;
+    height: 465px;
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .shop-cards-grid {
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .shop-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .shop-cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

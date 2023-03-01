@@ -1,13 +1,15 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --color-white: #ffffff;
-  --color-black: #2d3436;
+  --color-black: black;
 
   --color-gray-light: #f9f8f8;
+  --color-gray-dark: #525c60;
 
   --color-green-dark: #274c5b;
   --color-green-light: #7eb693;
@@ -25,6 +27,15 @@
   border: none;
   cursor: pointer;
   border-radius: 16px;
+  padding: 25px 71px 25px 31px;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  transition: var(--animation);
+  box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
+  -webkit-box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
+  -moz-box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
 }
 
 .btn-primary::after {
@@ -40,4 +51,11 @@
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    height: 54px;
+    padding: 20px 60px 20px 25px;
+  }
 }

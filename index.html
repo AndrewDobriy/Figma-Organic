@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="testimonial.css" />
+    <link rel="stylesheet" href="offer.css" />
+    <link rel="stylesheet" href="eco.css" />
+    <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="news.css" />
+    <link rel="stylesheet" href="footer.css" />
+
     <!-- Font Styles from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +29,7 @@
   <body>
     <header class="header">
       <nav class="header-nav">
-        <img src="assets/header/logo.svg" alt="logo" />
+        <img class="header-logo" src="assets/header/logo.svg" alt="logo" />
         <ul class="header-link-point">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
@@ -33,9 +41,9 @@
           <div class="cart-logo">
             <img src="assets/header/cart.svg" />
           </div>
-          <div>Cart</div>
-          <div>0</div>
+          <div>Cart 0</div>
         </button>
+        <img class="burger-menu" src="assets/header/icon-menu.svg" alt="" />
       </nav>
     </header>
     <main class="main">
@@ -57,7 +65,327 @@
     </main>
 
     <div class="about">
-      <img src="assets/About/About.png" alt="" />
+      <div class="about-img"></div>
+
+      <section class="about-text">
+        <h2>About us</h2>
+        <h3>We Believe In Organic Foods For Strong Health</h3>
+        <p>
+          Welcome to the world of natural and organic. Here you can discover the
+          bounty of nature. We have grown on the principles of health, and care.
+          We aim to give our customers a healthy chemical-free meal for perfect
+          nutrition.
+        </p>
+        <div>
+          <div class="about-card first-about-card">
+            <img src="assets/About/about-1.png" alt="" />
+            <div class="about-card-text">
+              <h4>Organic Foods Only</h4>
+              <span>
+                The Product that you ordered will be verified that we have or
+                not if have we will start to move on with the next step.
+              </span>
+            </div>
+          </div>
+          <div class="about-card">
+            <img src="assets/About/about-2.png" alt="" />
+            <div class="about-card-text">
+              <h4>Organic Foods Only</h4>
+              <span>
+                The Product that you ordered will be verified that we have or
+                not if have we will start to move on with the next step.
+              </span>
+            </div>
+          </div>
+        </div>
+        <button class="btn-primary btn-about">Shop Now</button>
+      </section>
     </div>
+
+    <section class="shop">
+      <h3>Organic</h3>
+      <h2>Our Products</h2>
+      <div class="shop-cards-grid">
+        <!-- 1 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Vagetable</span>
+          <img src="assets/shop/Broccoli.png" alt="" />
+          <span class="shop-card-name">Calabrese Broccoli</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 25.00 USD</span>
+            <span class="shop-card-discount">$ 21.00 USD</span>
+          </div>
+        </div>
+        <!-- 2 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Vagetable</span>
+          <img src="assets/shop/corn.png" alt="" />
+          <span class="shop-card-name">Fresh Corn</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 21.23 USD</span>
+            <span class="shop-card-discount">$ 18.00 USD</span>
+          </div>
+        </div>
+        <!-- 3 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Mill</span>
+          <img src="assets/shop/pistachio.png" alt="" />
+          <span class="shop-card-name">Dried Pistachio</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 61.00 USD</span>
+            <span class="shop-card-discount">$ 48.00 USD</span>
+          </div>
+        </div>
+        <!-- 4 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Vagetable</span>
+          <img src="assets/shop/tomato.png" alt="" />
+          <span class="shop-card-name">Vegan Red Tomato</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 14.00 USD</span>
+            <span class="shop-card-discount">$ 9.37 USD</span>
+          </div>
+        </div>
+        <!-- 5 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Fru</span>
+          <img src="assets/shop/almonds.png" alt="" />
+          <span class="shop-card-name">Organic Almonds</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 21.00 USD</span>
+            <span class="shop-card-discount">$ 18.00 USD</span>
+          </div>
+        </div>
+        <!-- 6 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Mill</span>
+          <img src="assets/shop/hazelnut.png" alt="" />
+          <span class="shop-card-name">Brown Hazelnut</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 43.00 USD</span>
+            <span class="shop-card-discount">$ 34.00 USD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <h4>Testimonial</h4>
+      <h3>What Our Customer Saying?</h3>
+      <img
+        class="testimonial-avatar"
+        src="assets/testimonial/avatar.png"
+        alt="avatar"
+      />
+      <img src="assets/shop/stars.png" alt="" />
+      <p>
+        The quality of organic produce is extremely high, the service is second
+        to none and the taste of the food takes me back to my childhood when we
+        were growing our own.
+      </p>
+      <h5>Sara Taylor</h5>
+      <h6>Consumer</h6>
+      <span class="testimonial-line"></span>
+      <div class="testimonial-cards">
+        <!-- 1 card -->
+        <div class="testimonial-card">
+          <h3>100%</h3>
+          <h5>Organic</h5>
+        </div>
+        <!-- 2 card -->
+        <div class="testimonial-card">
+          <h3>285</h3>
+          <h5>Active Product</h5>
+        </div>
+        <!-- 3 card -->
+        <div class="testimonial-card">
+          <h3>385+</h3>
+          <h5>Organic Orchads</h5>
+        </div>
+        <!-- 4 card -->
+        <div class="testimonial-card">
+          <h3>25+</h3>
+          <h5>Years of Farming</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-products">
+      <h3>Offer Products</h3>
+      <div class="offer">
+        <h2>We Offer Organic For you</h2>
+        <button class="btn-primary btn-offer">View All Priducts</button>
+      </div>
+      <div class="cards-offer">
+        <!-- 3 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Mill</span>
+          <img src="assets/shop/pistachio.png" alt="" />
+          <span class="shop-card-name">Dried Pistachio</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 61.00 USD</span>
+            <span class="shop-card-discount">$ 48.00 USD</span>
+          </div>
+        </div>
+        <!-- 4 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Vagetable</span>
+          <img src="assets/shop/tomato.png" alt="" />
+          <span class="shop-card-name">Vegan Red Tomato</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 14.00 USD</span>
+            <span class="shop-card-discount">$ 9.37 USD</span>
+          </div>
+        </div>
+        <!-- 5 card -->
+
+        <div class="shop-card">
+          <span class="shop-category">Fru</span>
+          <img src="assets/shop/almonds.png" alt="" />
+          <span class="shop-card-name">Organic Almonds</span>
+          <span class="shop-card-line"></span>
+          <div class="shop-card-price-container">
+            <span class="shop-card-price">$ 21.00 USD</span>
+            <span class="shop-card-discount">$ 18.00 USD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="eco-friendly">
+      <div class="eco-img"></div>
+      <div></div>
+      <div class="eco-card">
+        <h3>Eco Friendly</h3>
+        <h2>From our Farm To your Home.</h2>
+        <h4>Choose Your Products</h4>
+        <h5>
+          In our listing, we have several collections of organic products. This
+          is the place where you need to choose the product you want.
+        </h5>
+        <h4>Farmers will produce it</h4>
+        <h5>
+          The Product that you ordered will be verified that we have or not if
+          have we will start to move on with the next step.
+        </h5>
+        <h4>We Can Delivery too</h4>
+        <h5>
+          If you are not comfortable going to the nearby market place we also
+          will deliver your product to your doorstep.
+        </h5>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-1">
+        <div class="page-info">Fruit Juice</div>
+      </div>
+      <div class="page-2">
+        <div class="page-info">Organic Food</div>
+      </div>
+      <div class="page-3">
+        <div class="page-info">Nuts Cookies</div>
+      </div>
+    </section>
+
+    <section class="news">
+      <h3>News</h3>
+      <div class="news-primary">
+        <h2>Discover The recent content about organic products</h2>
+        <button class="btn-primary btn-news">More News</button>
+      </div>
+      <div class="news-cards">
+        <div class="news-card first-news-card">
+          <div class="news-card-info">
+            <span class="news-card-user">Kristina Castle</span>
+            <h2>Everything You Need to Know About Organic</h2>
+            <p>
+              Organic farming is the only way that you still can experience the
+              real world.
+            </p>
+            <button class="btn-primary btn-news">View More</button>
+          </div>
+        </div>
+        <div class="news-card second-news-card">
+          <div class="news-card-info">
+            <span class="news-card-user">Alex Louis</span>
+            <h2>Organic Fruits: Surprising Benefits and Facts</h2>
+            <p>
+              The world of nature has grown on the principles of health,
+              ecology, and care.
+            </p>
+            <button class="btn-primary btn-news">View More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <form class="newsletter">
+        <div class="newsletter-text">Subscribe our Newsletter</div>
+        <div class="newsletter-feedback">
+          <input type="email" placeholder="Enter your email adress" required />
+          <button class="btn-primary btn-newsletter">Subscribe</button>
+        </div>
+      </form>
+      <div class="contacts">
+        <!-- contact Us -->
+        <div class="contact-us">
+          Contact Us
+          <div>
+            <h3>Email</h3>
+            <span>needhelp@organick.com</span>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <span>123 (1254) 1452</span>
+          </div>
+          <div>
+            <h3>Address</h3>
+            <span>88 Road, Brooklyn Street, USA</span>
+          </div>
+        </div>
+
+        <!-- Organic -->
+        <div class="organic">
+          <img class="footer-logo" src="assets/footer/footer-logo.png" alt="" />
+          <p>
+            We are a popular and farming company aspiring to be a leader in the
+            Organic food industry.
+          </p>
+          <div class="socials">
+            <a href="#"><img src="assets/footer/facebook.svg" alt="" /></a>
+            <a href="#"><img src="assets/footer/twitter.svg" alt="" /></a>
+            <a href="#"><img src="assets/footer/instagram.svg" alt="" /></a>
+            <a href="#"><img src="assets/footer/pink.svg" alt="" /></a>
+          </div>
+        </div>
+        <!-- Utility pages -->
+        <div class="utility">
+          Utility Pages
+          <a href="">Style Guide</a>
+          <a href="">Protected</a>
+          <a href="">Page Not Found</a>
+          <a href="">Changelog</a>
+          <a href="">Licenses</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

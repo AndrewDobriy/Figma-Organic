@@ -1,3 +1,112 @@
 .about {
+  display: flex;
   margin-top: 140px;
+  padding: 130px 30px 150px 30px;
+  width: 100%;
+  height: 1000px;
+  background-color: var(--color-gray-light);
+}
+
+.about-img {
+  margin-right: 30px;
+  background-image: url('assets/About/About.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  font-family: 'Yellowtail', cursive;
+  font-weight: 400;
+  color: var(--color-green-light);
+}
+.about-text h3 {
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--color-green-dark);
+  width: 70%;
+}
+
+.about-text p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+  letter-spacing: 0.36px;
+  line-height: 32px;
+  color: var(--color-gray-dark);
+}
+
+.about-card img {
+  margin-right: 20px;
+}
+
+.first-about-card {
+  margin-bottom: 25px;
+}
+.about-card {
+  display: flex;
+}
+
+.about-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.about-card-text h4 {
+  font-size: 25px;
+  margin-bottom: 9px;
+  color: var(--color-gray-dark);
+}
+.about-card-text span {
+  color: var(--color-gray-dark);
+  font-size: 18px;
+}
+
+.btn-about {
+  background: var(--color-green-dark);
+
+  border-radius: 16px;
+  color: white;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+.btn-about::after {
+  background-color: #335b6b;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    display: none;
+  }
+  .about {
+    margin-top: 70px;
+    padding: 65px 30px;
+    height: auto;
+  }
+  .about-text h3 {
+    width: 100%;
+  }
+  .about-card img {
+    margin-right: 20px;
+    width: 65px;
+    height: 65px;
+  }
+  .about-card-text h4 {
+    font-size: 20px;
+  }
+  .about-card-text span {
+    font-size: 14px;
+  }
+  .btn-about {
+    padding: 15px 72px 20px 25px;
+  }
 }

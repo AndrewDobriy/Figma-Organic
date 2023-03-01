@@ -46,7 +46,6 @@
   padding: 140px 30px 140px 30px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 140px;
 }
 
 .main-card {
@@ -99,4 +98,41 @@
 
 .second h3 {
   color: var(--color-green-dark);
+}
+
+@media (max-width: 950px) {
+  .main-text {
+    font-size: 36px;
+  }
+  .main-content {
+    height: 580px;
+  }
+  .main-cards {
+    padding: 70px 30px;
+  }
+  .main-cards h3 {
+    font-size: 32px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-text {
+    font-size: 36px;
+  }
+  .main-content {
+    height: 400px;
+  }
+  .main-text {
+    font-size: 24px;
+  }
+  .main-cards {
+    flex-direction: column;
+  }
+  .main-card {
+    width: 100%;
+  }
+  .first {
+    margin-bottom: 30px;
+  }
 }
