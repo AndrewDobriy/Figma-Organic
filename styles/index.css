@@ -40,7 +40,7 @@
 
 .btn-primary::after {
   content: '';
-  background-image: url('/assets/main/arrow.svg');
+  background-image: url('../assets/main/arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;

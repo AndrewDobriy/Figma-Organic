@@ -41,4 +41,47 @@
 .cards-offer {
   display: flex;
   margin-top: 50px;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .offer-products {
+    padding: 70px 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .offer-products {
+    padding: 70px 10px;
+  }
+  .shop-card:last-child {
+    display: none;
+  }
+  .btn-offer {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-products {
+    height: auto;
+  }
+  .offer h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-offer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop-card:first-child {
+    margin-bottom: 10px;
+  }
+  .offer h2 {
+    font-size: 18px;
+  }
 }

@@ -6,14 +6,14 @@
 }
 
 .page-1 {
-  background-image: url('assets/page/page-1.png');
+  background-image: url('../assets/page/page-1.png');
 }
 .page-2 {
-  background-image: url('assets/page/page-2.png');
+  background-image: url('../assets/page/page-2.png');
 }
 
 .page-3 {
-  background-image: url('assets/page/page-3.png');
+  background-image: url('../assets/page/page-3.png');
 }
 
 .page-1,
@@ -33,8 +33,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 281px;
-  height: 95px;
+  width: 70%;
+  height: 14%;
   background-color: white;
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
@@ -55,4 +55,13 @@
   box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
   -webkit-box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
   -moz-box-shadow: 4px 10px 23px 4px rgba(23, 4, 4, 0.68);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 70px 10px;
+  }
+  .page-info {
+    font-size: 18px;
+  }
 }

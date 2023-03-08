@@ -85,7 +85,7 @@
 .shop-card-price-container::after {
   content: '';
   position: absolute;
-  background-image: url('assets/shop/stars.png');
+  background-image: url('../assets/shop/stars.png');
 
   width: 85px;
   height: 15px;

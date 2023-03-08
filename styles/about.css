@@ -9,7 +9,7 @@
 
 .about-img {
   margin-right: 30px;
-  background-image: url('assets/About/About.png');
+  background-image: url('../assets/About/About.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
